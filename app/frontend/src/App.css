@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Asegúrate de que el contenedor principal llene al menos la altura de la pantalla */
+#root, html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* El contenedor principal de la aplicación debe ser un flex container */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* El contenedor principal (main) debe crecer para ocupar el espacio disponible */
+main {
+  flex: 1;
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #4B1E20; /* Color marrón oscuro */
+  color: #FFFFFF; /* Color de texto */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .download-apps,
+.footer .social-media {
+  display: flex;
+  align-items: center;
+}
+
+.footer .download-apps img,
+.footer .social-media img {
+  margin-right: 1rem;
+  height: 40px;
+}
+
+.footer .download-apps img:last-child,
+.footer .social-media img:last-child {
+  margin-right: 0;
+}
+
+.footer .terms {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.footer .terms a {
+  color: #FFFFFF; /* Color rojo oscuro */
+  text-decoration: none;
+}
+
+.footer .terms a:hover {
+  text-decoration: underline;
+}

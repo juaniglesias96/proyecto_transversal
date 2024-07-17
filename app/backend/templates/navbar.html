@@ -1,0 +1,12 @@
+<nav>
+    <a href="/">Inicio</a>
+    <a href="/canchas">Canchas</a>
+    <div>
+        ¡Hola! {{user.username}}
+        {% if user.is_authenticated %}
+            <a href="/logout">Cerrar sesión</a>
+        {% else %}
+            <a href="/login">Iniciar sesión</a>
+        {% endif%}
+    </div>
+</nav>

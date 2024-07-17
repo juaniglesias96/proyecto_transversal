@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reserva de Canchas</title>
+</head>
+<body>
+<div>
+    {% for message in messages %}
+        <div>{{ message }}</div>
+    {% endfor %}
+</div>
+<h1>Registro</h1>
+<form method="POST">
+    {% csrf_token %} <!-- Protección para ataques CSRF -->
+    {{ registro_form }} <!-- Importación de formulario -->
+    <br>
+    <button type="submit">Registrarme</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canchas Reserva</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Cancha: {{ nombre }}</h1>
+    <div>
+        {% for message in messages %}
+            <div>{{ message }}</div>
+        {% endfor %}
+        <h5>Descripción</h5>
+        <p>{{ descripcion }}</p>
+        <h3>Horarios</h3>
+        {% if horarios|length > 0 %}
+            {% for horario in horarios %}
+            <div>
+                <form method="post" action="/reservar/{{ horario.id }}">
+                    {% csrf_token %}
+                    <p>Inicio: {{ horario.hora_inicio|date:'Y-m-d, h:i:s'}}</p>
+                    <p>Fin: {{ horario.hora_fin|date:'Y-m-d, h:i:s'}}</p>
+                    <button type="submit">Reservar</button>
+                </form>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>No hay horarios disponibles.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

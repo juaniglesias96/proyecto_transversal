@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif; /* Fuente principal para el cuerpo del texto */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", sans-serif; /* Fuente para títulos */
+  color: #4b1e20; /* Color marrón oscuro para los títulos */
+}
+
+/* reserva.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* reserva.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.reserva-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  display: flex;
+  align-items: center;
+}
+
+.filters select,
+.filters input {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cancha-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cancha-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.cancha-card:hover {
+  transform: scale(1.05);
+}
+
+.cancha-card h2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.cancha-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cancha-card h5 {
+  margin: 10px 0;
+}
+
+.more-info-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.more-info-button:hover {
+  background-color: #45a049;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  right:0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content h5 {
+  color: #4CAF50;
+}
+
+.modal-content button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}

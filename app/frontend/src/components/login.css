@@ -1,0 +1,80 @@
+:root {
+    --dark-brown: #4B1E20;
+    --brown: #A73232;
+    --white: #FFFFFF;
+    --light-green: #A7B592;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif; /* Aplica la fuente Bebas Neue */
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-green);
+}
+
+.login-card {
+    width: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+.card-title {
+    color: var(--dark-brown);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-group label {
+    color: var(--dark-brown);
+}
+
+.form-control {
+    border: 1px solid var(--brown);
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: var(--brown);
+    border: none;
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-brown);
+}
+
+.btn-block {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.btn-link {
+    color: var(--brown) !important; /* Asegura que el color se aplique */
+    text-decoration: none;
+    cursor: pointer;
+    display: block; /* Asegura que se muestren como bloques */
+    margin-top: 0.5rem; /* Espaciado entre los enlaces */
+}
+
+.btn-link:hover {
+    color: var(--dark-brown) !important;
+    text-decoration: underline;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+django
+admin
+admin
+
+MySQL
+root
+root
